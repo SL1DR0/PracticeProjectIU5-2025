@@ -1,26 +1,37 @@
 cmake_minimum_required(VERSION 3.14)
-project(QtRegistrationApp)
+project(QtProject)
 
-# Включаем автоматическую генерацию MOC, UIC и RCC
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 17)
 
-# Ищем Qt 5
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
-# Исходные файлы
+# Добавьте папку сборки в список директорий для поиска заголовочных файлов
+include_directories(${CMAKE_BINARY_DIR})
+
+# Добавьте исходные файлы
 set(SOURCES
     main.cpp
+    mainWindow.cpp
+    secondWindow.cpp
 )
 
-# .ui файл
-set(UI_FILES
-    registration_form.ui
+# Добавьте UI-файлы
+set(FORMS
+    mainWindow.ui
+    secondWindow.ui
 )
 
-# Создаем исполняемый файл
-add_executable(QtRegistrationApp ${SOURCES} ${UI_FILES})
+# Генерация UI-заголовочных файлов
+qt5_wrap_ui(UI_HEADERS ${FORMS})
 
-# Подключаем библиотеки Qt 5
-target_link_libraries(QtRegistrationApp PRIVATE Qt5::Widgets)
+# Генерация MOC-файлов
+qt5_wrap_cpp(MOC_SOURCES
+    mainWindow.h
+    secondWindow.h
+)
+
+# Создание исполняемого файла
+add_executable(QtProject ${SOURCES} ${UI_HEADERS} ${MOC_SOURCES})
+
+# Подключение библиотек Qt
+target_link_libraries(QtProject Qt5::Widgets)

@@ -1,0 +1,4 @@
+-I/home/ur0ch/PracticeProjectIU5-2025/build
+-o
+/home/ur0ch/PracticeProjectIU5-2025/build/moc_mainWindow.cpp
+/home/ur0ch/PracticeProjectIU5-2025/mainWindow.h

@@ -117,74 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named QtRegistrationApp
+# Target rules for targets named QtProject
 
 # Build rule for target.
-QtRegistrationApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QtRegistrationApp
-.PHONY : QtRegistrationApp
+QtProject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QtProject
+.PHONY : QtProject
 
 # fast build rule for target.
-QtRegistrationApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/build
-.PHONY : QtRegistrationApp/fast
-
-#=============================================================================
-# Target rules for targets named QtRegistrationApp_autogen_timestamp_deps
-
-# Build rule for target.
-QtRegistrationApp_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QtRegistrationApp_autogen_timestamp_deps
-.PHONY : QtRegistrationApp_autogen_timestamp_deps
-
-# fast build rule for target.
-QtRegistrationApp_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp_autogen_timestamp_deps.dir/build.make CMakeFiles/QtRegistrationApp_autogen_timestamp_deps.dir/build
-.PHONY : QtRegistrationApp_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named QtRegistrationApp_autogen
-
-# Build rule for target.
-QtRegistrationApp_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QtRegistrationApp_autogen
-.PHONY : QtRegistrationApp_autogen
-
-# fast build rule for target.
-QtRegistrationApp_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp_autogen.dir/build.make CMakeFiles/QtRegistrationApp_autogen.dir/build
-.PHONY : QtRegistrationApp_autogen/fast
-
-QtRegistrationApp_autogen/mocs_compilation.o: QtRegistrationApp_autogen/mocs_compilation.cpp.o
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.o
-
-# target to build an object file
-QtRegistrationApp_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/QtRegistrationApp_autogen/mocs_compilation.cpp.o
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.cpp.o
-
-QtRegistrationApp_autogen/mocs_compilation.i: QtRegistrationApp_autogen/mocs_compilation.cpp.i
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-QtRegistrationApp_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/QtRegistrationApp_autogen/mocs_compilation.cpp.i
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.cpp.i
-
-QtRegistrationApp_autogen/mocs_compilation.s: QtRegistrationApp_autogen/mocs_compilation.cpp.s
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-QtRegistrationApp_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/QtRegistrationApp_autogen/mocs_compilation.cpp.s
-.PHONY : QtRegistrationApp_autogen/mocs_compilation.cpp.s
+QtProject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/build
+.PHONY : QtProject/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -200,8 +150,104 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtRegistrationApp.dir/build.make CMakeFiles/QtRegistrationApp.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mainWindow.o: mainWindow.cpp.o
+.PHONY : mainWindow.o
+
+# target to build an object file
+mainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.o
+.PHONY : mainWindow.cpp.o
+
+mainWindow.i: mainWindow.cpp.i
+.PHONY : mainWindow.i
+
+# target to preprocess a source file
+mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.i
+.PHONY : mainWindow.cpp.i
+
+mainWindow.s: mainWindow.cpp.s
+.PHONY : mainWindow.s
+
+# target to generate assembly for a file
+mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.s
+.PHONY : mainWindow.cpp.s
+
+moc_mainWindow.o: moc_mainWindow.cpp.o
+.PHONY : moc_mainWindow.o
+
+# target to build an object file
+moc_mainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.o
+.PHONY : moc_mainWindow.cpp.o
+
+moc_mainWindow.i: moc_mainWindow.cpp.i
+.PHONY : moc_mainWindow.i
+
+# target to preprocess a source file
+moc_mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.i
+.PHONY : moc_mainWindow.cpp.i
+
+moc_mainWindow.s: moc_mainWindow.cpp.s
+.PHONY : moc_mainWindow.s
+
+# target to generate assembly for a file
+moc_mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.s
+.PHONY : moc_mainWindow.cpp.s
+
+moc_secondWindow.o: moc_secondWindow.cpp.o
+.PHONY : moc_secondWindow.o
+
+# target to build an object file
+moc_secondWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.o
+.PHONY : moc_secondWindow.cpp.o
+
+moc_secondWindow.i: moc_secondWindow.cpp.i
+.PHONY : moc_secondWindow.i
+
+# target to preprocess a source file
+moc_secondWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.i
+.PHONY : moc_secondWindow.cpp.i
+
+moc_secondWindow.s: moc_secondWindow.cpp.s
+.PHONY : moc_secondWindow.s
+
+# target to generate assembly for a file
+moc_secondWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.s
+.PHONY : moc_secondWindow.cpp.s
+
+secondWindow.o: secondWindow.cpp.o
+.PHONY : secondWindow.o
+
+# target to build an object file
+secondWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.o
+.PHONY : secondWindow.cpp.o
+
+secondWindow.i: secondWindow.cpp.i
+.PHONY : secondWindow.i
+
+# target to preprocess a source file
+secondWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.i
+.PHONY : secondWindow.cpp.i
+
+secondWindow.s: secondWindow.cpp.s
+.PHONY : secondWindow.s
+
+# target to generate assembly for a file
+secondWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.s
+.PHONY : secondWindow.cpp.s
 
 # Help Target
 help:
@@ -211,15 +257,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... QtRegistrationApp_autogen"
-	@echo "... QtRegistrationApp_autogen_timestamp_deps"
-	@echo "... QtRegistrationApp"
-	@echo "... QtRegistrationApp_autogen/mocs_compilation.o"
-	@echo "... QtRegistrationApp_autogen/mocs_compilation.i"
-	@echo "... QtRegistrationApp_autogen/mocs_compilation.s"
+	@echo "... QtProject"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainWindow.o"
+	@echo "... mainWindow.i"
+	@echo "... mainWindow.s"
+	@echo "... moc_mainWindow.o"
+	@echo "... moc_mainWindow.i"
+	@echo "... moc_mainWindow.s"
+	@echo "... moc_secondWindow.o"
+	@echo "... moc_secondWindow.i"
+	@echo "... moc_secondWindow.s"
+	@echo "... secondWindow.o"
+	@echo "... secondWindow.i"
+	@echo "... secondWindow.s"
 .PHONY : help
 
 

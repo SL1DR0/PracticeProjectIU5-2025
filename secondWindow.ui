@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondWindow</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1371</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SecondWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(/home/ur0ch/PracticeProjectIU5-2025/images/secondWindowBack.png);  /* Путь к изображению */
+background-position: center;  /* Позиция изображения */
+background-repeat: no-repeat;  /* Не повторять изображение */
+background-size: cover;  /* Растянуть изображение на весь виджет */</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>220</y>
+     <width>211</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-image: url(/home/ur0ch/PracticeProjectIU5-2025/images/white.png);  /* Путь к фотографии */
+    background-position: center;  /* Позиция фотографии */
+    background-repeat: no-repeat;  /* Не повторять фотографию */
+    background-size: cover;  /* Растянуть фотографию на весь фон */
+    color: Blue;  /* Цвет текста */
+    padding: 5px;  /* Отступы внутри поля */
+    border: 1px solid gray;  /* Граница поля */
+}
+
+QLineEdit::placeholder {
+    color: Black;  /* Цвет текста плейсхолдера */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>440</y>
+     <width>211</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-image: url(/home/ur0ch/PracticeProjectIU5-2025/images/white.png);  /* Путь к фотографии */
+    background-position: center;  /* Позиция фотографии */
+    background-repeat: no-repeat;  /* Не повторять фотографию */
+    background-size: cover;  /* Растянуть фотографию на весь фон */
+    color: Blue;  /* Цвет текста */
+    padding: 5px;  /* Отступы внутри поля */
+    border: 1px solid gray;  /* Граница поля */
+}
+
+QLineEdit::placeholder {
+    color: Black;  /* Цвет текста плейсхолдера */
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
