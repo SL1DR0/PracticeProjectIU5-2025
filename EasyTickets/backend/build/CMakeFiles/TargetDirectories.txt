@@ -1,0 +1,9 @@
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/CMakeFiles/backend.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/CMakeFiles/edit_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/CMakeFiles/rebuild_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/controllers/CMakeFiles/models.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/controllers/CMakeFiles/edit_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/controllers/CMakeFiles/rebuild_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/models/CMakeFiles/controllers.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/models/CMakeFiles/edit_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/EasyTickets/backend/build/models/CMakeFiles/rebuild_cache.dir
