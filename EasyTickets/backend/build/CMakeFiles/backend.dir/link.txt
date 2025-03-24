@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/backend.dir/link.d CMakeFiles/backend.dir/src/main.cpp.o CMakeFiles/backend.dir/src/server.cpp.o -o backend  /usr/lib/x86_64-linux-gnu/libdrogon.so.1.8.7 models/libcontrollers.a controllers/libmodels.a /usr/lib/x86_64-linux-gnu/libtrantor.so.1.5.12 /usr/lib/x86_64-linux-gnu/libjsoncpp.so -lyaml-cpp
