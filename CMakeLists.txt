@@ -1,37 +1,32 @@
-cmake_minimum_required(VERSION 3.14)
-project(QtProject)
+cmake_minimum_required(VERSION 3.10)
+project(EasyTickets)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets)
+# Указываем пути для UIC
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_SOURCE_DIR}/ui)
 
-# Добавьте папку сборки в список директорий для поиска заголовочных файлов
-include_directories(${CMAKE_BINARY_DIR})
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-# Добавьте исходные файлы
+# Явно указываем include директории
+include_directories(
+    ${CMAKE_BINARY_DIR}/EasyTickets_autogen/include
+    ${CMAKE_SOURCE_DIR}/src
+)
+
 set(SOURCES
-    main.cpp
-    mainWindow.cpp
-    secondWindow.cpp
+    src/main.cpp
+    src/mainWindow.cpp
+    src/mainWindow.h
+    src/secondWindow.cpp
+    src/secondWindow.h
+    ui/mainWindow.ui
+    ui/secondWindow.ui
 )
 
-# Добавьте UI-файлы
-set(FORMS
-    mainWindow.ui
-    secondWindow.ui
-)
-
-# Генерация UI-заголовочных файлов
-qt5_wrap_ui(UI_HEADERS ${FORMS})
-
-# Генерация MOC-файлов
-qt5_wrap_cpp(MOC_SOURCES
-    mainWindow.h
-    secondWindow.h
-)
-
-# Создание исполняемого файла
-add_executable(QtProject ${SOURCES} ${UI_HEADERS} ${MOC_SOURCES})
-
-# Подключение библиотек Qt
-target_link_libraries(QtProject Qt5::Widgets)
+add_executable(EasyTickets ${SOURCES})
+target_link_libraries(EasyTickets Qt5::Widgets)

@@ -117,137 +117,139 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named QtProject
+# Target rules for targets named EasyTickets
 
 # Build rule for target.
-QtProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QtProject
-.PHONY : QtProject
+EasyTickets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EasyTickets
+.PHONY : EasyTickets
 
 # fast build rule for target.
-QtProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/build
-.PHONY : QtProject/fast
+EasyTickets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/build
+.PHONY : EasyTickets/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named EasyTickets_autogen_timestamp_deps
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.o
-.PHONY : main.cpp.o
+# Build rule for target.
+EasyTickets_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EasyTickets_autogen_timestamp_deps
+.PHONY : EasyTickets_autogen_timestamp_deps
 
-main.i: main.cpp.i
-.PHONY : main.i
+# fast build rule for target.
+EasyTickets_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets_autogen_timestamp_deps.dir/build.make CMakeFiles/EasyTickets_autogen_timestamp_deps.dir/build
+.PHONY : EasyTickets_autogen_timestamp_deps/fast
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.i
-.PHONY : main.cpp.i
+#=============================================================================
+# Target rules for targets named EasyTickets_autogen
 
-main.s: main.cpp.s
-.PHONY : main.s
+# Build rule for target.
+EasyTickets_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EasyTickets_autogen
+.PHONY : EasyTickets_autogen
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+EasyTickets_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets_autogen.dir/build.make CMakeFiles/EasyTickets_autogen.dir/build
+.PHONY : EasyTickets_autogen/fast
 
-mainWindow.o: mainWindow.cpp.o
-.PHONY : mainWindow.o
-
-# target to build an object file
-mainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.o
-.PHONY : mainWindow.cpp.o
-
-mainWindow.i: mainWindow.cpp.i
-.PHONY : mainWindow.i
-
-# target to preprocess a source file
-mainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.i
-.PHONY : mainWindow.cpp.i
-
-mainWindow.s: mainWindow.cpp.s
-.PHONY : mainWindow.s
-
-# target to generate assembly for a file
-mainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/mainWindow.cpp.s
-.PHONY : mainWindow.cpp.s
-
-moc_mainWindow.o: moc_mainWindow.cpp.o
-.PHONY : moc_mainWindow.o
+EasyTickets_autogen/mocs_compilation.o: EasyTickets_autogen/mocs_compilation.cpp.o
+.PHONY : EasyTickets_autogen/mocs_compilation.o
 
 # target to build an object file
-moc_mainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.o
-.PHONY : moc_mainWindow.cpp.o
+EasyTickets_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/EasyTickets_autogen/mocs_compilation.cpp.o
+.PHONY : EasyTickets_autogen/mocs_compilation.cpp.o
 
-moc_mainWindow.i: moc_mainWindow.cpp.i
-.PHONY : moc_mainWindow.i
+EasyTickets_autogen/mocs_compilation.i: EasyTickets_autogen/mocs_compilation.cpp.i
+.PHONY : EasyTickets_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-moc_mainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.i
-.PHONY : moc_mainWindow.cpp.i
+EasyTickets_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/EasyTickets_autogen/mocs_compilation.cpp.i
+.PHONY : EasyTickets_autogen/mocs_compilation.cpp.i
 
-moc_mainWindow.s: moc_mainWindow.cpp.s
-.PHONY : moc_mainWindow.s
+EasyTickets_autogen/mocs_compilation.s: EasyTickets_autogen/mocs_compilation.cpp.s
+.PHONY : EasyTickets_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-moc_mainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_mainWindow.cpp.s
-.PHONY : moc_mainWindow.cpp.s
+EasyTickets_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/EasyTickets_autogen/mocs_compilation.cpp.s
+.PHONY : EasyTickets_autogen/mocs_compilation.cpp.s
 
-moc_secondWindow.o: moc_secondWindow.cpp.o
-.PHONY : moc_secondWindow.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-moc_secondWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.o
-.PHONY : moc_secondWindow.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-moc_secondWindow.i: moc_secondWindow.cpp.i
-.PHONY : moc_secondWindow.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-moc_secondWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.i
-.PHONY : moc_secondWindow.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-moc_secondWindow.s: moc_secondWindow.cpp.s
-.PHONY : moc_secondWindow.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-moc_secondWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/moc_secondWindow.cpp.s
-.PHONY : moc_secondWindow.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-secondWindow.o: secondWindow.cpp.o
-.PHONY : secondWindow.o
+src/mainWindow.o: src/mainWindow.cpp.o
+.PHONY : src/mainWindow.o
 
 # target to build an object file
-secondWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.o
-.PHONY : secondWindow.cpp.o
+src/mainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/mainWindow.cpp.o
+.PHONY : src/mainWindow.cpp.o
 
-secondWindow.i: secondWindow.cpp.i
-.PHONY : secondWindow.i
+src/mainWindow.i: src/mainWindow.cpp.i
+.PHONY : src/mainWindow.i
 
 # target to preprocess a source file
-secondWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.i
-.PHONY : secondWindow.cpp.i
+src/mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/mainWindow.cpp.i
+.PHONY : src/mainWindow.cpp.i
 
-secondWindow.s: secondWindow.cpp.s
-.PHONY : secondWindow.s
+src/mainWindow.s: src/mainWindow.cpp.s
+.PHONY : src/mainWindow.s
 
 # target to generate assembly for a file
-secondWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtProject.dir/build.make CMakeFiles/QtProject.dir/secondWindow.cpp.s
-.PHONY : secondWindow.cpp.s
+src/mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/mainWindow.cpp.s
+.PHONY : src/mainWindow.cpp.s
+
+src/secondWindow.o: src/secondWindow.cpp.o
+.PHONY : src/secondWindow.o
+
+# target to build an object file
+src/secondWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/secondWindow.cpp.o
+.PHONY : src/secondWindow.cpp.o
+
+src/secondWindow.i: src/secondWindow.cpp.i
+.PHONY : src/secondWindow.i
+
+# target to preprocess a source file
+src/secondWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/secondWindow.cpp.i
+.PHONY : src/secondWindow.cpp.i
+
+src/secondWindow.s: src/secondWindow.cpp.s
+.PHONY : src/secondWindow.s
+
+# target to generate assembly for a file
+src/secondWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyTickets.dir/build.make CMakeFiles/EasyTickets.dir/src/secondWindow.cpp.s
+.PHONY : src/secondWindow.cpp.s
 
 # Help Target
 help:
@@ -257,22 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... QtProject"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... mainWindow.o"
-	@echo "... mainWindow.i"
-	@echo "... mainWindow.s"
-	@echo "... moc_mainWindow.o"
-	@echo "... moc_mainWindow.i"
-	@echo "... moc_mainWindow.s"
-	@echo "... moc_secondWindow.o"
-	@echo "... moc_secondWindow.i"
-	@echo "... moc_secondWindow.s"
-	@echo "... secondWindow.o"
-	@echo "... secondWindow.i"
-	@echo "... secondWindow.s"
+	@echo "... EasyTickets_autogen"
+	@echo "... EasyTickets_autogen_timestamp_deps"
+	@echo "... EasyTickets"
+	@echo "... EasyTickets_autogen/mocs_compilation.o"
+	@echo "... EasyTickets_autogen/mocs_compilation.i"
+	@echo "... EasyTickets_autogen/mocs_compilation.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/mainWindow.o"
+	@echo "... src/mainWindow.i"
+	@echo "... src/mainWindow.s"
+	@echo "... src/secondWindow.o"
+	@echo "... src/secondWindow.i"
+	@echo "... src/secondWindow.s"
 .PHONY : help
 
 
