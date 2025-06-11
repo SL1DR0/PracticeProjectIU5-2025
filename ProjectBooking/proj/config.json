@@ -1,0 +1,25 @@
+{
+  "listeners": [
+    {
+      "address": "0.0.0.0",
+      "port": 8080
+    }
+  ],
+  "document_root": "./",
+  "static_file_headers": {
+    "Cache-Control": "no-cache"
+  },
+  "app": {
+    "threads": 1
+  },
+  "session": {
+    "enable_session": true,
+    "timeout": 3600,
+    "session_name": "drogon_session_id",
+    "start_with_session": true
+  },
+  "log": {
+    "level": "DEBUG",
+    "file": "drogon.log"
+  }
+}

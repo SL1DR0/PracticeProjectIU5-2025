@@ -1,0 +1,3 @@
+/home/marko/proct/PracticeProjectIU5-2025/FlightBookingAPI/build/CMakeFiles/FlightBookingAPI.dir
+/home/marko/proct/PracticeProjectIU5-2025/FlightBookingAPI/build/CMakeFiles/edit_cache.dir
+/home/marko/proct/PracticeProjectIU5-2025/FlightBookingAPI/build/CMakeFiles/rebuild_cache.dir
